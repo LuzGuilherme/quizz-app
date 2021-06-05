@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import "./Assets/style.css";
 import quizService from "./quizService";
 import QuestionBox from './components/QuestionBox'
-import Result from "./components/Result"
+import Result from './components/Result'
 
 class Quizz extends Component {
 
@@ -61,7 +61,7 @@ class Quizz extends Component {
                     )
                 )}
 
-                {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain} />)}
+               {this.state.responses === 5 ? (<Result score={this.state.score} playAgain={this.playAgain}  />) : null};
             </div>
          );
     }
